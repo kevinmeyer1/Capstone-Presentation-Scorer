@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
             }
             """.trimIndent()
 
-            val url = "http://10.0.2.2:3000/verifyToken"
+            val url = "https://scopingproject.herokuapp.com/verifyToken"
             val chargeReqBody = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), linkJson)
             val request = Request.Builder()
                 .url(url)
@@ -89,7 +89,7 @@ class LoginActivity : AppCompatActivity() {
             }
             """.trimIndent()
 
-            val url = "http://10.0.2.2:3000/login"
+            val url = "https://scopingproject.herokuapp.com/login"
             val chargeReqBody = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), loginJson)
             val request = Request.Builder()
                 .url(url)
@@ -142,7 +142,7 @@ class LoginActivity : AppCompatActivity() {
                 }
                 """.trimIndent()
 
-                val url = "http://10.0.2.2:3000/request_login_information"
+                val url = "https://scopingproject.herokuapp.com/request_login_information"
                 val chargeReqBody = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), loginJson)
                 val request = Request.Builder()
                     .url(url)

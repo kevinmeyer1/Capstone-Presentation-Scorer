@@ -69,7 +69,7 @@ function sendEmail(toEmail, token, password, req, res) {
 
         <h3>Token: ${token}</h3>
 
-        <a href="https://inclass05.herokuapp.com/deeplink">Click this link</a>
+        <a href="https://scopingproject.herokuapp.com/deeplink">Click this link</a>
 
         <p>
         For future reference here is your login credentials\n
@@ -99,12 +99,6 @@ function sendEmail(toEmail, token, password, req, res) {
 // ---------------------------------------------------- ROUTES ----------------------------------------------------
 
 app.use(bodyParser.json())
-
-app.post('/getToken', function(req, res) {
-    var email = req.body.email
-
-
-})
 
 app.post('/verifyToken', function(req, res) {
     var token = req.body.token

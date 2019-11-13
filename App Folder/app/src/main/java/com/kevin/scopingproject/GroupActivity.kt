@@ -167,7 +167,7 @@ class GroupActivity : AppCompatActivity() {
             }
             """.trimIndent()
 
-        val url = "http://10.0.2.2:3000/submit_score"
+        val url = "https://scopingproject.herokuapp.com/submit_score"
         val chargeReqBody = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), submitJson)
         val request = Request.Builder()
             .url(url)

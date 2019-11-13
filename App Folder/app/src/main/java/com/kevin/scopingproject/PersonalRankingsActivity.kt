@@ -38,7 +38,7 @@ class PersonalRankingsActivity : AppCompatActivity() {
             }
             """.trimIndent()
 
-        val url = "http://10.0.2.2:3000/personal_scores"
+        val url = "https://scopingproject.herokuapp.com/personal_scores"
         val chargeReqBody = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), scoresJson)
         val request = Request.Builder()
             .url(url)

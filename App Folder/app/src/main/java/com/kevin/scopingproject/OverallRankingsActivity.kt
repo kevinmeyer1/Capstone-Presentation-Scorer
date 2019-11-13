@@ -29,7 +29,7 @@ class OverallRankingsActivity : AppCompatActivity() {
 
         val client = OkHttpClient()
 
-        val url = "http://10.0.2.2:3000/overall_scores"
+        val url = "https://scopingproject.herokuapp.com/overall_scores"
         val request = Request.Builder()
             .url(url)
             .get()
