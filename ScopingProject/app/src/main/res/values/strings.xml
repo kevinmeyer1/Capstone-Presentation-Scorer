@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">score.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_with_password">Login with Password</string>
+    <string name="send_me_a_magic_link">Send Me a Magic Link</string>
+    <string name="magic_link_message">Your login link has been sent to \n%s\n Please click on the link in the email to login</string>
+    <string name="open_email_app">Open Email App</string>
+    <string name="login_with_magic_link">Login with Magic Link</string>
+    <string name="log_me_in">Log Me In</string>
+    <string name="your_scores">Your Scores</string>
+    <string name="global_scores">Global Scores</string>
+    <string name="submit_response">Submit Response</string>
+</resources>

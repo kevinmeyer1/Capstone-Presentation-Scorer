@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Page Title
+        </title>
+
+        <script>
+            function createLink() {
+                var token = document.getElementById("token").value
+                var firstPart = "myapp://myhost/login?token="
+                var anchorLink = firstPart.concat(token)
+
+                var link = document.getElementById("link")
+                link.href = anchorLink
+                link.style = "visibility: visible"
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <p>Paste your token into this textbox and click 'Create Link'</p>
+
+        <input type="text" name="token" id="token">
+
+        <button onclick="createLink()">
+            Create Link
+        </button>
+
+        <br>
+        <br>
+
+        <a href="" id="link" style="visibility: hidden">Click me to log in</a>
+    </body>
+</html>
