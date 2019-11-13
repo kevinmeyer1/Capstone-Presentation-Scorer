@@ -1,0 +1,131 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ScopingProject",
+		"_postman_id": "6f93bf0c-dce2-f95c-e595-8f3f17f67b57",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": "https://scopingproject.herokuapp.com/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"kmeyer13@uncc.edu\",\n\t\"password\": \"password\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Score",
+			"request": {
+				"url": "https://scopingproject.herokuapp.com/submit_score",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"kmeyer13@uncc.edu\",\n\t\"team\": \"The Grads\",\n\t\"score\": 3.75\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Personal Scores",
+			"request": {
+				"url": "https://scopingproject.herokuapp.com/personal_scores",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"kmeyer13@uncc.edu\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Overall Scores",
+			"request": {
+				"url": "https://scopingproject.herokuapp.com/overall_scores",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Request Login Information",
+			"request": {
+				"url": "https://scopingproject.herokuapp.com/request_login_information",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"kmeyer13@uncc.edu\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Token",
+			"request": {
+				"url": "https://scopingproject.herokuapp.com/verifyToken",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImttZXllcjEzQHVuY2MuZWR1IiwiaWF0IjoxNTczNjU3NjI0fQ.3lXm4hRWcxKho64gmfds0nJlpkTKotlHB1zBXS72Eew\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
