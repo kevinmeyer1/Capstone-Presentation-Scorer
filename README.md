@@ -1,5 +1,9 @@
 # Scoping Project with API, Database, and Deeplink
 
+When students complete their Senior year at UNCC, they have to create a group Capstone project to deomstrate what they have learned. Towards the end of the year, all of the groups come together to give presentations to industry people who will learn about different projects and give them scores. The purpose of this application was to give a simple way for industry professionals to come in and score teams. The teams scores are all kept in our database and their final scores are averaged out for everyone to see. 
+
+An interesting extra part of this project was that we were tasked to implement some simple sign on method for our users. Our instructor wanted us to stay away from basic username and password sign-ons. Our group chose to work with Magic Links/Deeplinks. I will admit, I implemented it in a pretty bad or roundabout way because I was trying to understand them at the time, but it all worked out anyways.
+
 This project includes the API and Android app needed to complete the requirements of Scoping Project.
 
 The API was create in Node.js and uses Express for the routing. The data is stored on an Amazon AWS MySQL database.
